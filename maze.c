@@ -1,6 +1,8 @@
 #include "stdio.h"
 
 
+//Maze SW test
+
 char solStr[200];
 unsigned char strPos = 0;
 
@@ -45,7 +47,7 @@ unsigned char stepNext(int currCol, int currRow, char skipPos)
    //return if given location a solid wall
    if(!maze[currRow][currCol]) return 0;
 
-	//is given location the exit?
+   //is given location the exit?
    //(skip if position is start)
    if((currRow != startRow) || (currCol != startCol))
    {
